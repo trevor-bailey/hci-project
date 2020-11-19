@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title>HCI-App</title>
+        <link rel="stylesheet" href="assests/style.css">
+    </head>
+    <script src="https://kit.fontawesome.com/92ed4f50f3.js" crossorigin="anonymous"></script>
+
+	<body style = "background-color: whitesmoke;">
+		
+
+
+
+
+		<div class="site-intro">
+			HCI MULTIPURPOSE WEB APP
+
+		</div>
+
+		<div class="date-container">
+			<table style="margin-left: auto; margin-right: auto;">
+				<tr>
+					<td>
+						<div class="date-card">
+							<div>DATE</div>
+							<span id="date"></span>
+						</div>
+
+					</td>
+					<td>
+						<div class="date-card">
+							<div>TIME</div>
+							<span id="time"></span>
+						</div>
+
+					</td>
+				</tr>
+			</table>
+
+
+		</div>
+
+
+        <div class="container">
+
+			<!-- Weather card -->
+            <div class="card weather" >
+                <div class="card-content">
+					<div class="card-title">
+						Current Weather
+						<div class="notification"></div>
+						<div class="weather-icon">
+							<img src="icons/unknown.png" alt="">
+						</div>
+						<div class="weather-container"></div>
+						<div class="temperature-value">
+							<p>-<span>F</span></p>
+						</div>
+						<div class="temperature-description">
+							<p>-</p>
+						</div>
+						<div class="location">
+							<p>-</p>
+						</div>
+					</div>					
+                </div>
+			</div>
+
+			<!-- tasks card -->
+			<div class="card taskList">
+                <div class="card-content">
+					<div class="card-title">
+						Task List
+					</div>
+					<div class="task-list-container">
+						<div class="task-list">
+							<div class="task-input">
+								<table>
+									<tr>								
+										<input type="text" class='input'placeholder="Add A Task to Your To List">
+										<button class="task-button"><i class="fas fa-plus search-icon"></i></button>
+									</tr>
+								</table>
+							</div>
+							<div class="task-container"></div>		
+						</div>	
+
+					</div>
+	
+				</div>
+			</div>
+
+
+			<!-- map card -->
+			<div class="card" >
+				<div class="card-content">
+					<div class="card-title">
+						You Are Here!
+					</div>
+					<div class="notification"></div>
+					<div id="map"></div>					
+				</div>
+			</div>
+
+
+			<!-- Stock widget -->
+			<div class="card" >
+				<div class="card-content">
+					<div class="card-title">
+						The Market
+					</div>
+					<div class="market-content">
+						
+						<!-- Macroaxis Widget Start --><script src="https://www.macroaxis.com/widgets/url.jsp?t=42"></script><div class="macroaxis-copyright"></div><!-- Macroaxis Widget End -->
+						<!-- TradingView Widget BEGIN -->
+						<div class="tradingview-widget-container">
+							<div id="tradingview_bcdc9"></div>
+							<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+							<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+							<script type="text/javascript">
+							new TradingView.widget(
+							{
+							"width" : 600,
+							"height": 500,
+							"symbol": "NASDAQ:AAPL",
+							"interval": "D",
+							"timezone": "Etc/UTC",
+							"theme": "light",
+							"style": "1",
+							"locale": "en",
+							"toolbar_bg": "#f1f3f6",
+							"enable_publishing": false,
+							"allow_symbol_change": true,
+							"container_id": "tradingview_bcdc9"
+						}
+							);
+							</script>
+						</div>
+						<!-- TradingView Widget END -->
+					</div>
+
+								
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="weather.js"></script>
+		<script src="datetime.js"></script>
+		<script src="tasklist.js"></script>
+		<script src="googlemap.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBNF81Xu0GzIItDxtKq0zluaidBOxsaZk&callback=initMap&libraries=&v=weekly"defer></script>
+    </body>
+</html>

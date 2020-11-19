@@ -1,0 +1,274 @@
+@font-face{
+  font-family: cafe;
+  src: url(Cafe.ttf);
+}
+
+
+body{
+  font-family: cafe;
+  /* background: url(hci-background.jpg); */
+  background: linear-gradient(whitesmoke,white);
+
+}
+
+
+.site-intro{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  letter-spacing: 5px;
+  color:#749DC6 ;
+}
+
+
+
+.card {
+  margin:5%;
+  /* background: url(hci-background.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  min-height: 339px;
+  display: grid;
+}
+
+.weather{
+  background: url(hci-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.card-content{
+
+  border-radius: 5px; /* 5px rounded corners */
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  min-height: 257px;
+
+}
+
+.card-title{
+  text-align: center;
+  font-size: 30px;
+  color: #749DC6;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+
+.weather-icon{
+
+}
+
+.weather-icon img{
+  display: block;
+  margin: 0 auto;
+}
+
+.temperature-value p{
+  padding: 0;
+  margin: 0;
+  color: #293251;
+  font-size: 70px;
+  text-align: center;
+}
+
+.temperature-value p:hover{
+  cursor: pointer;
+}
+
+.temperature-value span{
+  font-size: 30px
+}
+
+.temperature-description p{
+  padding: 8px;
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+}
+
+.location p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 2%;
+}
+
+
+.date-container{
+  margin: auto;
+  text-align: center;
+  color: #749DC6;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.time-div{
+  font-size: 25px;
+  letter-spacing: 5px;
+
+}
+
+.date-div{
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.date-card {
+  margin:5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  display: grid;
+  min-height: 75px;
+  min-width: 100px;
+}
+
+.date-card div {
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+
+}
+
+
+#date{
+  text-align: center;
+}
+#time{
+  text-align: center;
+}
+
+
+.taskList{
+  background: url(task-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.edit-button{
+  background: white;
+  color: #749DC6;
+  border: 2px solid #749DC6;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: cafe;
+  font-weight: 500;
+}
+
+.remove-button{
+  background: #749DC6;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: cafe;
+  border: none;
+  font-weight: 500;
+}
+
+.task-input{
+  width: 100%;
+
+
+}
+
+.input{
+  width: 90%;
+  border: 2px solid #749DC6;
+  border-right: none;
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #749DC6;
+  margin-bottom: 5%;
+}
+
+.task-button{
+  border-style: none;
+  border-radius: 5px;
+  margin-left: -5px;
+  background-color: #749DC6;
+  border: 2px solid #749DC6;
+  padding: 4px;
+}
+
+.search-icon{
+  color: white;
+}
+
+.card-content{
+  justify-content: center;
+}
+
+
+.task-list-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-list{
+  top:50%;
+  left: 50%;
+
+}
+
+
+.item-field{
+  font-family: cafe;
+  border: 2px solid #749DC6;
+  padding: 5px;
+}
+
+.item-field :active{
+  border: 2px solid #749DC6;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  margin-bottom: 3%;
+}
+
+
